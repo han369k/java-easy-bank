@@ -1,16 +1,16 @@
 package com.javaeasybank.account.enums;
 
 public enum Currency {
-    TWD(2, 365),
-    USD(2, 360),
-    EUR(2, 360),
-    JPY(0, 360),
-    GBP(2, 365),
-    CNY(2, 365),
-    AUD(2, 365),
-    CAD(2, 365),
-    CHF(2, 360),
-    HKD(2, 365);
+    TWD(2, 365),    // 新台幣
+    USD(2, 360),    // 美元
+    EUR(2, 360),    // 歐元
+    JPY(0, 360),    // 日圓
+    GBP(2, 365),    // 英鎊
+    CNY(2, 365),    // 人民幣
+    AUD(2, 365),    // 澳幣
+    CAD(2, 365),    // 加幣
+    CHF(2, 360),    // 瑞士法郎
+    HKD(2, 365);    // 港幣
 
     private final int decimalPlaces;
     private final int dayCountBasis;
@@ -20,10 +20,18 @@ public enum Currency {
         this.dayCountBasis = dayCountBasis;
     }
 
+    /**
+     * 取得該幣別的小數位數
+     * @return 小數位數 (例如 TWD 為 2, JPY 為 0)
+     */
     public int getDecimalPlaces() {
         return decimalPlaces;
     }
 
+    /**
+     * 取得該幣別利息計算的年度天數基準
+     * @return 天數基準 (360 或 365)
+     */
     public int getDayCountBasis() {
         return dayCountBasis;
     }

@@ -1,6 +1,6 @@
 package com.javaeasybank.account.enums;
 
 public enum EntryType {
-    DEBIT,
-    CREDIT
+    DEBIT,      // 扣款（錢變少）
+    CREDIT      // 入帳（錢變多）
 }
