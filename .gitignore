@@ -35,7 +35,7 @@ Thumbs.db
 desktop.ini
 
 # 資料庫密碼
-src/main/resources/application.properties
+src/main/resources/application-local.properties
 
 ### NetBeans ###
 /nbproject/private/
